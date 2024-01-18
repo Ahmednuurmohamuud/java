@@ -1,0 +1,62 @@
+<html lang="en">
+<head>
+
+    <title>Document</title>
+</head>
+<body>
+  
+        <h2>Grade Calculator</h2>
+
+        <form>
+            <label>Enter your marks: </label>
+            <input type="text" id="marks"> <br>
+            <label>Your Grade is: </label>
+            <input type="text" id="grade" readonly> <br>
+            <input type="button" value="Calculate Grade" onclick="calculateGrade()">
+        </form>
+
+        <form>
+            <label>Enter your Birth Date: </label>
+            <input type="text" id="bdate"> <br>
+            <label>Your Age is: </label>
+            <input type="text" id="age" readonly> <br>
+            <input type="button" value="Calculate Age" onclick="getAge()">
+        </form>
+        <script>
+        function calculateGrade() {
+            marks = document.getElementById('marks').value;
+            grade = '';
+            if (marks >= 90) {
+                grade = 'A';
+            } else if (marks >= 80) {
+                grade = 'B';
+            } else if (marks >= 70) {
+                grade = 'C';
+            } else if (marks >= 60) {
+                grade = 'D';
+            } else {
+                grade = 'F';
+            }
+            console.log(grade);
+            document.getElementById('grade').value = grade;
+        }
+        
+        function getAge() {
+            bdate = document.getElementById('bdate').value;
+        
+            age = 2023 -  bdate;
+        
+            document.getElementById('age').value = age;
+        }
+</script>
+        <script src="simplescript.js"> </script>
+
+        GUI
+        CLI
+
+
+  
+
+    
+</body>
+</html>
