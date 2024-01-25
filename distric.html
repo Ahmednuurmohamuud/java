@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="distric.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="test.css">
+    <title>stdPortal</title>
+</head>
+<body>
+
+<form action="">
+   
+        <label for="nameInput">Enter your name:</label>
+       <input type="text" id="nameInput" required> <br> 
+
+       <!-- grade code -->
+       <label>Enter your marks: </label>
+       <input type="text" id="marks" oninput="calculateGrade()"> <br>
+       <label>Your Grade is: </label>
+       <input type="text" id="grade" readonly> <br>
+
+       <!-- age code -->
+       <label>Enter your Birth Date: </label>
+            <input type="text" id="bdate" oninput="getAge()"> <br>
+            <label>Your Age is: </label>
+            <input type="text" id="age" readonly> <br>
+           
+       <!-- university code -->
+       <label for="university">Select university:</label>
+       <select id="university" name="university" onchange="universityselec()">
+           <option value="simad">simad</option>
+           <option value="jazeera">jazeera</option>
+           <option value="muqdisho">muqdisho</option>
+           <!-- Add more options as needed -->
+       </select><br>
+     
+    <label for="district">Select district:</label>
+    <select id="district" name="district" onchange="populateDistricts()">
+        <option value="boondheere">Boondheere</option>
+        <option value="cabdicaziiz">Cabdicaziiz</option>
+        <option value="dharkenley">Dharkenley</option>
+        <!-- Add more options as needed -->
+    </select><br>
+     
+
+
+    <label for="city">City:</label>
+    <input id="city" name="city" readonly>
+</form>
+    <script src="distric.js"></script>
+</body>
+</html>
