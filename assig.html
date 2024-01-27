@@ -1,0 +1,40 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="steyl.css">
+    <title>Somali States</title>
+</head>
+<body>
+<form action="" >
+   
+    <label for="Stage">Select Stage:</label>
+    <select id="Stage" name="Stage" onchange="StageFlag()">
+        <option value="Banaadir">Banaadir</option>
+        <option value="Puntland">Puntland</option>
+        <option value="Jubaland">Jubaland</option>
+        <option value="Soomaliland">Soomaliland</option>
+        <option value="Hirshabeele">Hirshabeele</option>
+        <option value="Galmudug">Galmudug</option>
+        <option value="KonfurGalbeed">KonfurGalbeed</option>
+        <option value="Khaatumo">Khaatumo</option>
+    </select><br>
+
+    <label >Your Flag Is</label>
+    <div class="S-result">
+        <div class="result" id="flagimage">
+            <img src="img/banadir.jpg" alt="Banaadir" class="flag" data-flag="banaadirFlag">
+            <img src="img/galmudug.jpg" alt="Gmudug.png" class="flag" data-flag="GalmudugFlag">
+            <img src="img/hirshabele.jpg" alt="Hirshabele" class="flag" data-flag="HirshabeeleFlag">
+            <img src="img/jublandf.jpg" alt="Jubaland" class="flag" data-flag="JubalandFlag">
+            <img src="img/kgs.jpg" alt="Kgalbeed" class="flag" data-flag="KonfurGalbeedFlag">
+            <img src="img/khatu.jpg" alt="Khatumo" class="flag" data-flag="KhaatumoFlag">
+            <img src="img/punt.jpg" alt="Putland" class="flag" data-flag="PuntlandFlag">
+            <img src="img/somali.jpg" alt="Somaliland" class="flag" data-flag="SoomalilandFlag">
+        </div>
+    </div>
+</form>
+<script src="assig.js"></script>
+</body>
+</html>
