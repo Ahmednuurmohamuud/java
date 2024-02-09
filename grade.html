@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+
+$(document).ready(function(){
+
+$("button").click(function(){
+    
+    var marks = parseInt($("#marks").val());
+
+    $(".btn").click(function(){
+    $(".hide").hide();
+  });
+
+    var grade = '';
+
+    if (marks >= 90) {
+        grade = 'A';
+        
+    } else if (marks >= 80) {
+        grade = 'B';
+    } else if (marks >= 70) {
+        grade = 'C';
+    } else if (marks >= 60) {
+        grade = 'D';
+    } else {
+        grade = 'F';
+    }
+
+   
+    $("#grade").val(grade);
+});
+
+});
+
+
+       </script>
+</head>
+<body>
+    <div class="hide">
+        <label>Enter your marks: </label>
+        <input type="text" id="marks"> <br>
+        <label>Your Grade is: </label>
+        <input type="text" id="grade"> <br>
+        <button type="submit" class="btn">save</button>
+        <!-- <input type="submit" value="Calculate Grade"> -->
+    </div>
+  
+<div class="test">
+<h1>scholarship form</h1>
+
+<formsch >
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<p>Click the "Submit" button and the form-data will be sent to a page on the 
+server called "action_page.php".</p>
+</div>
+
+</body>
+</html>
+    
